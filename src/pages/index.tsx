@@ -1,19 +1,9 @@
 import React from 'react'
-import Head from 'next/head'
 
-import { Container } from '../styles/pages/Home'
+import Login from '../components/Login'
 
 const Home: React.FC = () => {
-  return (
-    <Container>
-      <Head>
-        <title>Teste</title>
-      </Head>
-
-      <h1>Hello World</h1>
-      <p>This is a template!</p>
-    </Container>
-  )
+  return <Login />
 }
 
 export default Home
