@@ -28,20 +28,20 @@ export const Col = css`
 
 export const ContentLeft = styled(BaseCol)`
   ${Col};
-  background: url('https://i.pinimg.com/originals/22/f5/9c/22f59c4a06b317110aab6fb9cc2ad09a.jpg')
+  background: url('https://media.glassdoor.com/l/51/47/2c/87/our-amazing-dev-team.jpg')
     no-repeat;
   background-size: cover;
   background-position: center;
 
-  ::before {
+  &::before {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     content: '';
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: black;
+    background: #000;
     opacity: 15%;
   }
 
@@ -106,7 +106,7 @@ export const Link = styled.a`
   }
 `
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   max-width: 450px;
@@ -190,7 +190,7 @@ export const Input = styled.div`
   }
 `
 
-export const Button = styled.a`
+export const Button = styled.button`
   padding: 20px 10px;
   width: 200px;
   text-align: center;

@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
+import 'toastify-js/src/toastify.css'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
