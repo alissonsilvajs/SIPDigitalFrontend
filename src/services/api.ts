@@ -5,7 +5,7 @@ const baseConfig: AxiosRequestConfig = {
   baseURL: 'http://localhost:3500'
 }
 
-export const post = (url: string, data: Array) => {
+export const post = (url: string, data: any) => {
   return axios.post(url, data, baseConfig).catch(catchAxiosError)
 }
 
